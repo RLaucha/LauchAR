@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lautaro Ruisoto — Web Freelancer</title>
+  <meta name="description" content="Diseño y desarrollo web minimalista para negocios y profesionales. Sitios rápidos, modernos y listos para vender. SEO básico incluido." />
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LauchAR">
+<meta property="og:url" content="https://tusitio.com.ar/">
+<meta property="og:title" content="LauchAR — Sitios web minimalistas que convierten">
+<meta property="og:description" content="Diseño y desarrollo web para negocios y profesionales. Rápidos, claros y listos para vender. SEO básico y mantenimiento.">
+<meta property="og:image" content="assets/og-lauchar.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LauchAR — Sitios web minimalistas que convierten">
+<meta name="twitter:description" content="Diseño y desarrollo web para negocios y profesionales. Rápidos, claros y listos para vender. SEO básico y mantenimiento.">
+<meta name="twitter:image" content="assets/og-lauchar.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Lautaro Ruisoto",
+  "alternateName": "LauchAR",
+  "jobTitle": "Desarrollador y Diseñador Web",
+  "url": "https://tusitio.com.ar/",
+  "image": "assets/og-lauchar.png",
+  "sameAs": [
+    "https://www.linkedin.com/in/tu-perfil",
+    "https://www.instagram.com/tu-usuario"
+  ],
+  "knowsAbout": ["Desarrollo web","Diseño web","SEO","Frontend"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "LauchAR",
+  "url": "https://tusitio.com.ar/",
+  "publisher": {
+    "@type": "Person",
+    "name": "Lautaro Ruisoto"
+  }
+}
+</script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <img src="assets/logotipo - lauchAR.png" alt="Logo LR Web" width="40" height="40" loading="eager" decoding="async">
+        <span class="brand__text">LauchAR</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Principal">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">Menú</button>
+        <ul id="nav-menu" class="nav__menu">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contacto" class="btn btn--primary">Contactar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title">Sitios web <span class="u-underline">minimalistas</span> que convierten</h1>
+          <p class="hero__subtitle">Diseño y desarrollo web para negocios y profesionales. Rápidos, claros y listos para vender. Incluye SEO básico y mantenimiento.</p>
+          <div class="hero__cta">
+            <a href="#contacto" class="btn btn--primary">Cotizar mi sitio</a>
+            <a href="#portfolio" class="btn btn--ghost">Ver trabajos</a>
+          </div>
+          <ul class="hero__bullets" role="list">
+            <li>Carga rápida y responsive</li>
+            <li>SEO técnico esencial</li>
+            <li>Diseño limpio y profesional</li>
+          </ul>
+        </div>
+        <figure class="hero__mockup" aria-label="Mockup de sitio web">
+          <div class="mockup-card" aria-hidden="true">
+            <div class="mockup-bar"></div>
+            <div class="mockup-body">
+              <div class="mockup-hero"></div>
+              <div class="mockup-grid">
+                <div></div><div></div><div></div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="sr-only">Vista previa de un diseño web moderno y minimalista.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Servicios</h2>
+          <p>Soluciones a medida para impulsar tu presencia online.</p>
+        </header>
+        <div class="cards">
+          <article class="card">
+            <h3>Creación desde cero</h3>
+            <p>Investigación, wireframes y diseño visual. Desarrollo en HTML, CSS y JS con foco en performance y accesibilidad.</p>
+            <ul>
+              <li>Arquitectura de información</li>
+              <li>Diseño UI/UX minimalista</li>
+              <li>Despliegue y dominio</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Rediseño</h3>
+            <p>Modernizá tu web actual: mejor navegación, estética consistente y velocidad optimizada.</p>
+            <ul>
+              <li>Análisis heurístico</li>
+              <li>Mejoras visuales y de copy</li>
+              <li>Optimización técnica</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Mantenimiento</h3>
+            <p>Actualizaciones, seguridad y mejoras continuas. Paquetes mensuales flexibles.</p>
+            <ul>
+              <li>Monitoreo básico</li>
+              <li>Backups y parches</li>
+              <li>Mejoras evolutivas</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>SEO básico</h3>
+            <p>Configuración técnica inicial para que Google entienda tu sitio.</p>
+            <ul>
+              <li>Metadatos y OG</li>
+              <li>Sitemap y robots</li>
+              <li>Etiquetas y estructura H</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section id="proceso" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2>Proceso de trabajo</h2>
+          <p>Transparente, simple y enfocado en resultados.</p>
+        </header>
+        <ol class="steps">
+          <li>
+            <span class="steps__num">1</span>
+            <div>
+              <h3>Brief & objetivos</h3>
+              <p>Entiendo tu negocio, público y metas para definir el alcance.</p>
+            </div>
+          </li>
+          <li>
+            <span class="steps__num">2</span>
+            <div>
+              <h3>UX & wireframes</h3>
+              <p>Organizo contenidos y navegación con foco en la conversión.</p>
+            </div>
+          </li>
+          <li>
+            <span class="steps__num">3</span>
+            <div>
+              <h3>UI & desarrollo</h3>
+              <p>Diseño limpio y código semántico optimizado.</p>
+            </div>
+          </li>
+          <li>
+            <span class="steps__num">4</span>
+            <div>
+              <h3>Lanzamiento & SEO</h3>
+              <p>Pruebas, mediciones y optimización técnica inicial.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Portfolio</h2>
+          <p>Algunos proyectos y exploraciones recientes.</p>
+        </header>
+        <div class="grid grid--portfolio">
+<a href="https://rlaucha.github.io/miWeb/" class="tile" target="_blank" rel="noopener">
+  <div class="tile__img">
+    <img src="assets/empr.png" alt="Pádel Pro — Emprendimiento" loading="lazy" decoding="async">
+  </div>
+  <div class="tile__body">
+    <h3>Pádel Pro</h3>
+    <p>Emprendimiento(sin terminar).</p>
+  </div>
+</a>
+<a href="https://rlaucha.github.io/Cocchiola/index.html" class="tile" target="_blank" rel="noopener">
+  <div class="tile__img">
+    <img src="assets/emp.png" alt="Empresa - Cocchiola" loading="lazy" decoding="async">
+  </div>
+  <div class="tile__body">
+    <h3>Cocchiola</h3>
+    <p>Empresa.</p>
+  </div>
+</a>
+<a href="https://rlaucha.github.io/Cuadros/" class="tile" target="_blank" rel="noopener">
+  <div class="tile__img">
+    <img src="assets/emprc.png" alt="Auradecoshop - Emprendimiento" loading="lazy" decoding="async">
+  </div>
+  <div class="tile__body">
+    <h3>Auradecoshop</h3>
+    <p>Cuadros decorativos(sin terminar).</p>
+  </div>
+</a>
+        </div>
+        <div class="center mt-24">
+          <a href="#contacto" class="btn btn--primary">¿Hacemos tu web?</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi" class="section section--alt">
+      <div class="container about">
+        <div class="about__copy">
+          <header class="section__header">
+            <h2>Sobre mí</h2>
+          </header>
+          <p>Soy Lautaro, desarrollador y diseñador web freelance. Creo sitios minimalistas y funcionales para negocios y profesionales que necesitan claridad y resultados.</p>
+          <p>Trabajo con HTML, CSS y JavaScript sin frameworks pesados, cuidando performance, accesibilidad y SEO técnico de base.</p>
+          <ul class="list-check">
+            <li>Comunicación clara y sin tecnicismos</li>
+            <li>Entregas puntuales</li>
+            <li>Mejoras continuas y soporte</li>
+          </ul>
+        </div>
+        <div class="about__card">
+          <div class="stat">
+            <span class="stat__num">+3</span>
+            <span class="stat__label">páginas entregadas</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">100%</span>
+            <span class="stat__label">enfoque en performance</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">SEO</span>
+            <span class="stat__label">técnico esencial</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Preguntas frecuentes</h2>
+        </header>
+        <details>
+          <summary>¿Cuánto tarda un sitio?</summary>
+          <p>Depende del alcance. Una landing suele llevar 1–2 semanas; un sitio multipágina, 2–4 semanas.</p>
+        </details>
+        <details>
+          <summary>¿Incluye dominio y hosting?</summary>
+          <p>Puedo ayudarte a contratarlos y configurarlos. Si ya tenés, me adapto.</p>
+        </details>
+        <details>
+          <summary>¿Trabajás con tiendas online?</summary>
+          <p>Sí, armo catálogos simples o integro plataformas según la necesidad.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section--cta">
+      <div class="container contact">
+        <header class="section__header">
+          <h2>Contáctame</h2>
+          <p>Contame sobre tu proyecto y armamos un plan.</p>
+        </header>
+<form id="contact-form" class="form" action="https://formspree.io/f/xblzwwrp" method="POST">
+  <!-- 👆 Reemplazá XXXXXXXX por tu Form ID de Formspree -->
+
+  <!-- honeypot anti-spam (oculto) -->
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+  <!-- asunto opcional -->
+  <input type="hidden" name="_subject" value="Nueva consulta — LauchAR">
+
+  <div class="form__row">
+    <label for="nombre">Nombre</label>
+    <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+  </div>
+
+  <div class="form__row">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email" required>
+  </div>
+
+  <div class="form__row">
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+  </div>
+
+  <div class="form__actions">
+    <button class="btn btn--primary" type="submit">Enviar consulta</button>
+    <p class="form__hint" id="form-hint" role="status" aria-live="polite"></p>
+  </div>
+</form>
+
+        <div class="contact__alt">
+          <p>¿Preferís WhatsApp? <a href="https://wa.me/5491167214914" target="_blank" rel="noopener">Escribime</a></p>
+          <p>Email directo: <a href="mailto:lautaroruisoto2007@gmail.com">lautaroruisoto2007@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© LR Web • Todos los derechos reservados</p>
+      <nav aria-label="Secundaria">
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" rel="nofollow">Política de privacidad</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
