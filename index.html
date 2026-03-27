@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LauchAR — Tecnología Web que Genera Ventas</title>
+  <meta name="description"
+    content="No hacemos páginas web. Creamos sistemas digitales que escalan tu negocio, generan ventas y posicionan tu marca. Desarrollo web, e-commerce y consultoría digital con IA." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LauchAR — Tecnología Web que Genera Ventas">
+  <meta property="og:description"
+    content="Sistemas digitales que escalan negocios. Desarrollo web, e-commerce y consultoría con IA.">
+  <meta property="og:url" content="https://lauchar.dev/">
+  <meta property="og:image" content="https://lauchar.dev/assets/og-image.png">
+  <meta name="theme-color" content="#0a0a0f" />
+  <script defer src="main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Lautaro Ruisoto",
+    "jobTitle":"Consultor de Tecnología Web & Desarrollo Digital",
+    "url":"https://lauchar.dev",
+    "image":"assets/logo.svg",
+    "sameAs":[],
+    "knowsAbout":["Desarrollo Web","E-commerce","Marketing Digital","Inteligencia Artificial","SEO","Performance Web","CRO"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" role="banner">
+    <div class="header-progress"></div>
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <img src="assets/logo.svg" alt="Logo LauchAR" width="36" height="36" loading="eager" decoding="async">
+        <span class="brand__text">LauchAR</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Principal">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">Menú</button>
+        <ul id="nav-menu" class="nav__menu">
+          <li><a href="#propuesta">Propuesta</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#sobre-mi">Nosotros</a></li>
+          <li><a href="#contacto" class="btn btn--primary">Agendar Llamada</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- ===== HERO ===== -->
+    <section id="inicio" class="hero" data-aos="fade-in">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="hero__badge">
+            <span class="pulse-dot"></span>
+            Disponible para nuevos proyectos
+          </div>
+          <h1 class="hero__title">
+            <span class="word">Tu</span> <span class="word">negocio</span> <span class="word">necesita</span> <span
+              class="word">más</span> <span class="highlight word">ventas</span><span class="word">,</span> <span
+              class="word">no</span> <span class="word">otra</span> <span class="word">página</span> <span
+              class="word">web</span>
+          </h1>
+          <p class="hero__subtitle">Creamos sistemas digitales de alto rendimiento que convierten visitantes en
+            clientes. Tecnología, estrategia y diseño al servicio de tu crecimiento.</p>
+          <div class="hero__cta">
+            <a href="#contacto" class="btn btn--primary" id="cta-hero-primary">Agendar Diagnóstico Gratuito</a>
+            <a href="#portfolio" class="btn btn--ghost" id="cta-hero-secondary">Ver Casos de Éxito</a>
+          </div>
+          <div class="hero__metrics">
+            <div class="metric">
+              <span class="metric__value" data-count="98">0%</span>
+              <span class="metric__label">Performance Score</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value" data-count="3">&lt;0s</span>
+              <span class="metric__label">Tiempo de carga</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">100%</span>
+              <span class="metric__label">Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-label="Mockup de dashboard web">
+          <div class="hero-mockup" aria-hidden="true">
+            <div class="hero-mockup__bar">
+              <span class="hero-mockup__dot"></span>
+              <span class="hero-mockup__dot"></span>
+              <span class="hero-mockup__dot"></span>
+            </div>
+            <div class="hero-mockup__body">
+              <div class="hero-mockup__header"></div>
+              <div class="hero-mockup__hero-block"></div>
+              <div class="hero-mockup__grid">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="hero-mockup__stats">
+                <div class="hero-mockup__stat-bar"></div>
+                <div class="hero-mockup__stat-bar"></div>
+                <div class="hero-mockup__stat-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROPUESTA DE VALOR — 3 PILARES ===== -->
+    <section id="propuesta" class="section section--alt section--centered" data-aos="fade-in">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">¿Por qué elegirnos?</span>
+          <h2>Tres pilares que nos diferencian</h2>
+          <p>No somos otro freelance que hace webs. Somos un equipo de tecnología enfocado en que tu inversión digital
+            genere retorno real.</p>
+        </header>
+        <div class="pillars">
+          <article class="pillar reveal">
+            <div class="pillar__icon">⚡</div>
+            <h3>Velocidad que Convierte</h3>
+            <p>Cada segundo de carga que eliminamos es dinero que ganás. Nuestros sitios cargan en menos de 3 segundos y
+              obtienen +95 en Google PageSpeed. Velocidad no es un bonus, es tu ventaja competitiva.</p>
+          </article>
+          <article class="pillar reveal reveal-delay-1">
+            <div class="pillar__icon">🛒</div>
+            <h3>Enfoque E-commerce</h3>
+            <p>Cada botón, cada color y cada palabra están pensados para una sola cosa: que tu visitante compre.
+              Diseñamos experiencias de compra que reducen la fricción y aumentan el ticket promedio.</p>
+          </article>
+          <article class="pillar reveal reveal-delay-2">
+            <div class="pillar__icon">🔧</div>
+            <h3>Código Limpio y Escalable</h3>
+            <p>Código semántico, sin dependencias innecesarias y preparado para crecer. Cuando tu negocio escale, tu web
+              ya va a estar lista. Sin rehacer, sin parches, sin deuda técnica.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section id="servicios" class="section section--centered" data-aos="fade-in">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Lo que hacemos</span>
+          <h2>Servicios que generan impacto</h2>
+          <p>Soluciones integrales diseñadas para negocios que quieren dejar de improvisar y empezar a escalar.</p>
+        </header>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-card__icon">💻</div>
+            <h3>Desarrollo Web de Alto Rendimiento</h3>
+            <p>Sitios construidos con HTML, CSS y JavaScript puro. Sin frameworks pesados que ralenticen. Performance,
+              accesibilidad y SEO técnico integrados desde el primer commit. Tu web no solo se ve bien: carga rápido,
+              posiciona y convierte.</p>
+            <div class="service-card__tags">
+              <span class="tag">HTML5 Semántico</span>
+              <span class="tag">CSS Moderno</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">SEO Técnico</span>
+              <span class="tag">Core Web Vitals</span>
+            </div>
+          </article>
+          <article class="service-card reveal reveal-delay-1">
+            <div class="service-card__icon">🏪</div>
+            <h3>E-commerce Especializado</h3>
+            <p>Tiendas online que venden, no solo muestran productos. Optimización de checkout, catálogos inteligentes y
+              una experiencia de compra que elimina fricciones. Cada decisión de diseño tiene un objetivo: más
+              conversiones, más ventas.</p>
+            <div class="service-card__tags">
+              <span class="tag">Catálogos</span>
+              <span class="tag">Checkout Optimizado</span>
+              <span class="tag">Pasarelas de Pago</span>
+              <span class="tag">UX de Compra</span>
+            </div>
+          </article>
+          <article class="service-card reveal reveal-delay-2">
+            <div class="service-card__icon">🤖</div>
+            <h3>Consultoría Digital & IA</h3>
+            <p>Estrategia digital con inteligencia artificial. Automatización de procesos, chatbots, análisis de datos y
+              growth hacking. Te ayudamos a tomar decisiones basadas en datos y a escalar con herramientas que trabajan
+              mientras dormís.</p>
+            <div class="service-card__tags">
+              <span class="tag">IA & Automatización</span>
+              <span class="tag">Analytics</span>
+              <span class="tag">Growth Hacking</span>
+              <span class="tag">Marketing Digital</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESO ===== -->
+    <section id="proceso" class="section section--alt section--centered" data-aos="fade-in">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Cómo trabajamos</span>
+          <h2>4 pasos hacia resultados reales</h2>
+          <p>Un proceso transparente y enfocado en tu negocio, no en tecnicismos.</p>
+        </header>
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <div class="process-step__num">01</div>
+            <h3>Diagnóstico</h3>
+            <p>Analizamos tu negocio, competencia y audiencia para entender qué necesitás realmente.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-1">
+            <div class="process-step__num">02</div>
+            <h3>Estrategia</h3>
+            <p>Definimos la arquitectura, el copy y el flujo de conversión antes de escribir una línea de código.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <div class="process-step__num">03</div>
+            <h3>Desarrollo</h3>
+            <p>Construimos con código limpio, optimizado y pensado para escalar con tu crecimiento.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <div class="process-step__num">04</div>
+            <h3>Optimización</h3>
+            <p>Medimos, ajustamos y mejoramos continuamente. Tu sitio evoluciona con tu negocio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio" class="section section--centered" data-aos="fade-in">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Casos de éxito</span>
+          <h2>Proyectos que hablan por sí solos</h2>
+          <p>Resultados reales para negocios reales. Así es como transformamos presencias digitales.</p>
+        </header>
+        <div class="portfolio-grid">
+          <a href="https://cocchiola.com.ar" target="_blank" rel="noopener" class="project-card reveal"
+            aria-label="Ver proyecto Cocchiola">
+            <div class="project-card__preview">
+              <span class="project-card__preview-label">cocchiola.com.ar</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Cocchiola</h3>
+              <p>Sitio web profesional con foco en posicionamiento de marca y captación de clientes. Diseño moderno,
+                performance optimizada y SEO técnico integrado.</p>
+              <div class="project-card__meta">
+                <span class="tag">Sitio Corporativo</span>
+                <span class="tag">SEO</span>
+                <span class="tag">Performance</span>
+              </div>
+              <div class="project-card__result">
+                ↗ +95 PageSpeed · Diseño a medida
+              </div>
+            </div>
+          </a>
+          <a href="https://guriche.com.ar" target="_blank" rel="noopener" class="project-card reveal reveal-delay-1"
+            aria-label="Ver proyecto Guriche">
+            <div class="project-card__preview">
+              <span class="project-card__preview-label">guriche.com.ar</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Guriche</h3>
+              <p>Plataforma digital con catálogo de productos y experiencia de usuario optimizada para conversión.
+                Arquitectura escalable y responsive.</p>
+              <div class="project-card__meta">
+                <span class="tag">E-commerce</span>
+                <span class="tag">Catálogo</span>
+                <span class="tag">UX Optimizado</span>
+              </div>
+              <div class="project-card__result">
+                ↗ Catálogo dinámico · Carga ultra rápida
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="center mt-24" style="margin-top: 2.5rem;">
+          <a href="#contacto" class="btn btn--outline-glow" id="cta-portfolio">Quiero resultados como estos →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="sobre-mi" class="section section--alt" data-aos="fade-in">
+      <div class="container about">
+        <div class="about__copy">
+          <header class="section__header">
+            <span class="section__eyebrow">Quién está detrás</span>
+            <h2>Tecnología con visión de negocio</h2>
+          </header>
+          <p>Soy Lautaro, consultor de tecnología web y desarrollo digital. No me defino como "el que hace páginas",
+            sino como el que entiende tu negocio y construye la herramienta digital exacta para que crezca.</p>
+          <p>Combino desarrollo de alto rendimiento (HTML, CSS, JS puro — sin frameworks que sobren) con estrategia de
+            conversión y mentalidad de producto. Cada proyecto que encaro tiene un solo indicador de éxito: que genere
+            resultados para vos.</p>
+          <ul class="list-check">
+            <li>Comunicación directa, sin vueltas</li>
+            <li>Entregas puntuales con código documentado</li>
+            <li>Soporte y optimización continua</li>
+            <li>Visión estratégica, no solo técnica</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">SEO</span>
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Github</span>
+            <span class="tech-tag">Cloudflare</span>
+            <span class="tech-tag">IA/Gemini</span>
+            <span class="tech-tag">Analytics</span>
+          </div>
+        </div>
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__num">+10</span>
+            <span class="stat__label">Proyectos entregados</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">100%</span>
+            <span class="stat__label">Clientes satisfechos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">+95</span>
+            <span class="stat__label">PageSpeed promedio</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">&lt;3s</span>
+            <span class="stat__label">Tiempo de carga</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="section section--centered" data-aos="fade-in">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Preguntas frecuentes</span>
+          <h2>Resolvé tus dudas</h2>
+          <p>Las preguntas que más nos hacen antes de arrancar un proyecto.</p>
+        </header>
+        <div class="faq-list">
+          <details>
+            <summary>¿Cuánto tiempo tarda un proyecto?</summary>
+            <p>Depende del alcance. Una landing page de alto impacto se entrega en 1–2 semanas. Un sitio completo con
+              e-commerce, entre 3–5 semanas. Siempre definimos plazos claros antes de arrancar.</p>
+          </details>
+          <details>
+            <summary>¿Qué incluye el "diagnóstico gratuito"?</summary>
+            <p>Una llamada de 15 minutos donde analizamos tu situación actual, identificamos oportunidades y te damos un
+              roadmap claro de qué necesitás. Sin compromiso, sin venta agresiva. Si tiene sentido trabajar juntos,
+              seguimos.</p>
+          </details>
+          <details>
+            <summary>¿Trabajan con tiendas online / e-commerce?</summary>
+            <p>Es una de nuestras especialidades. Armamos tiendas optimizadas para vender: catálogos inteligentes,
+              checkout sin fricciones, y pasarelas de pago integradas.</p>
+          </details>
+          <details>
+            <summary>¿Incluye dominio y hosting?</summary>
+            <p>Nos encargamos de toda la configuración técnica. Si ya tenés dominio y hosting, nos adaptamos. Si no, te
+              recomendamos las mejores opciones según tu presupuesto y necesidad.</p>
+          </details>
+          <details>
+            <summary>¿Qué pasa después de la entrega?</summary>
+            <p>No te dejamos sol@. Ofrecemos planes de mantenimiento, soporte técnico y optimización continua. Tu sitio
+              evoluciona con tu negocio.</p>
+          </details>
+          <details>
+            <summary>¿Por qué no usan WordPress o Wix?</summary>
+            <p>Porque el código propio es más rápido, más seguro, más escalable y 100% tuyo. No dependés de plugins, de
+              plantillas ni de plataformas externas. Tu web funciona exactamente como la necesitás.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="section section--cta" data-aos="fade-in">
+      <div class="container">
+        <div class="cta-content">
+          <span class="section__eyebrow">¿Listo para crecer?</span>
+          <h2>Dejá de perder clientes con una web que no vende</h2>
+          <p>Cada día sin una presencia digital profesional es dinero que se va a tu competencia. Hablemos y descubrí
+            cómo podemos escalar tu negocio juntos.</p>
+          <div class="cta-buttons">
+            <a href="#contacto" class="btn btn--primary" id="cta-final-primary">Quiero Escalar Mi Negocio</a>
+            <a href="https://wa.me/5491167214914" target="_blank" rel="noopener" class="btn btn--ghost"
+              id="cta-final-secondary">Agendar Llamada de 15 min</a>
+            <a href="#contacto" class="btn btn--outline-glow" id="cta-final-tertiary">Ver Diagnóstico Gratuito</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="section section--alt" data-aos="fade-in">
+      <div class="container contact">
+        <div>
+          <header class="section__header">
+            <span class="section__eyebrow">Contacto</span>
+            <h2>Empecemos a trabajar</h2>
+            <p>Contanos sobre tu proyecto y armamos un plan de acción en 24hs.</p>
+          </header>
+          <form class="form" action="https://formspree.io/f/xblzwwrp" method="POST">
+            <div class="form__row">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre o empresa"
+                required>
+            </div>
+            <div class="form__row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="form__row">
+              <label for="mensaje">¿Qué necesitás?</label>
+              <textarea id="mensaje" name="mensaje" rows="5"
+                placeholder="Contanos brevemente sobre tu proyecto, tu negocio y tus objetivos..." required></textarea>
+            </div>
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit" id="cta-form-submit">Enviar Consulta →</button>
+              <p class="form__hint" id="form-hint" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+        <div class="contact__info">
+          <h3>Otras formas de contacto</h3>
+          <div class="contact__info-item">
+            <span>💬</span>
+            <div>
+              <strong>WhatsApp</strong><br>
+              <a href="https://wa.me/5491167214914" target="_blank" rel="noopener">+54 9 11 6721-4914</a>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <span>📧</span>
+            <div>
+              <strong>Email</strong><br>
+              <a href="mailto:lautaroruisoto2007@gmail.com">lautaroruisoto2007@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <span>⚡</span>
+            <div>
+              <strong>Respuesta</strong><br>
+              En menos de 24 horas
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© 2024 LauchAR — Tecnología que genera ventas</p>
+      <nav aria-label="Secundaria">
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" rel="nofollow">Política de privacidad</a>
+      </nav>
+    </div>
+    <!-- Mobile Sticky CTA -->
+    <a href="#contacto" class="btn btn--primary sticky-cta-mobile">Agendar Diagnóstico</a>
+</body>
+
+</html>
