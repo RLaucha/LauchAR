@@ -1,14 +1,25 @@
 /* Menu toggle with ARIA state */
-const toggle = document.querySelector('.nav__toggle');
-const menu = document.getElementById('nav-menu');
-if (toggle && menu) {
-  toggle.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
-    toggle.setAttribute('aria-expanded', !expanded);
-    menu.setAttribute('aria-expanded', !expanded);
-    menu.toggleAttribute('aria-expanded');
-  });
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.nav__toggle');
+  const menu = document.getElementById('nav-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+      const newState = !isExpanded;
+      
+      toggle.setAttribute('aria-expanded', newState);
+      menu.setAttribute('aria-expanded', newState);
+      
+      // Animación suave de entrada con GSAP
+      if (newState && typeof gsap !== 'undefined') {
+        gsap.fromTo(menu, 
+          { opacity: 0, y: -15 }, 
+          { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }
+        );
+      }
+    });
+  }
+});
 
 /* Formspree AJAX form handler */
 const form = document.querySelector('.form');

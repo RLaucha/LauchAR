@@ -165,7 +165,10 @@ ul, ol { list-style: none; }
     box-shadow: var(--shadow-card);
     min-width: 220px;
   }
-  .nav__menu[aria-expanded="true"] { display: flex; }
+  .nav__menu[aria-expanded="true"] { 
+    display: flex !important; 
+    z-index: 1000;
+  }
 }
 
 /* ===== BUTTONS ===== */
