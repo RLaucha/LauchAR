@@ -160,6 +160,20 @@ if (typeof gsap !== 'undefined') {
     })
   });
 
+  // Scroll Animations for .pricing-reveal elements
+  gsap.set('.pricing-reveal', { y: 60, opacity: 0 });
+  ScrollTrigger.batch('.pricing-reveal', {
+    start: 'top 80%',
+    onEnter: batch => gsap.to(batch, {
+      y: 0,
+      opacity: 1,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: 'power2.out',
+      overwrite: true
+    })
+  });
+
   // Mobile Sticky CTA
   gsap.set('.sticky-cta-mobile', { scale: 0 });
   gsap.to('.sticky-cta-mobile', {
