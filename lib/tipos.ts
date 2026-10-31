@@ -1,7 +1,7 @@
 // Tipos del molde LaunchAR. No hace falta tocar este archivo:
 // todo lo que cambia por cliente vive en /site.config.ts
 
-export type NombreTema = "elegante" | "noche" | "fresco" | "urbano";
+export type NombreTema = "elegante" | "noche" | "fresco" | "urbano" | "lauchar";
 export type VarianteHero = "cinematico" | "dividido" | "spotlight";
 
 /** Nombre de un ícono de lucide-react (https://lucide.dev/icons) */

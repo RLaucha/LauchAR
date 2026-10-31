@@ -2,25 +2,25 @@ import type { SiteConfig } from "@/lib/tipos";
 
 // ─────────────────────────────────────────────────────────────
 //  ESTE ES EL ÚNICO ARCHIVO QUE SE CAMBIA POR CLIENTE.
-//  Web propia de LaunchAR (agencia). Contenido migrado de lauchar.dev.
+//  Web propia de LauchAR (agencia). Contenido migrado de lauchar.dev.
 // ─────────────────────────────────────────────────────────────
 
 const site: SiteConfig = {
   preview: false,
-  tema: "urbano", // "elegante" | "noche" | "fresco" | "urbano"
+  tema: "lauchar", // "elegante" | "noche" | "fresco" | "urbano" | "lauchar"
 
   negocio: {
-    nombre: "LaunchAR",
+    nombre: "LauchAR",
     rubro: "Webs, apps y automatizaciones",
     ciudad: "Buenos Aires, Argentina",
     whatsapp: "5491167214914",
-    mensajeWhatsapp: "¡Hola LaunchAR! Vi la web y quería pedir un diagnóstico para mi negocio.",
+    mensajeWhatsapp: "¡Hola LauchAR! Vi la web y quería pedir un diagnóstico para mi negocio.",
     instagram: "lauchar.dev",
     email: "proyectos@lauchar.dev",
   },
 
   seo: {
-    titulo: "LaunchAR · Webs, apps y automatizaciones para pymes y founders",
+    titulo: "LauchAR · Webs, apps y automatizaciones para pymes y founders",
     descripcion:
       "Webs y apps que venden, y automatizaciones con n8n que te ahorran horas. Diagnóstico y preview gratis antes de arrancar.",
   },
@@ -73,6 +73,22 @@ const site: SiteConfig = {
       subtitulo: "Así acompañamos a quienes ya confiaron en nosotros.",
       items: [
         {
+          icono: "GraduationCap",
+          cliente: "Instituto Fray Mamerto Esquiú",
+          tipo: "Web · Colegio · Mar del Plata",
+          texto: "Web institucional con los niveles educativos, la identidad del colegio y las inscripciones abiertas, pensada para que las familias encuentren todo rápido.",
+          tags: ["Sitio institucional", "Inscripciones", "Mobile-first"],
+          url: "https://ifmesquiu.com.ar/",
+        },
+        {
+          icono: "Wrench",
+          cliente: "M.A. Cocchiola S.A.",
+          tipo: "Web · Maquinaria industrial",
+          texto: "Sitio corporativo con las líneas de maquinaria e insumos, el stock disponible y contacto directo para asesoramiento.",
+          tags: ["Sitio corporativo", "Catálogo", "SEO"],
+          url: "https://cocchiola.com.ar/",
+        },
+        {
           icono: "PartyPopper",
           cliente: "Quinta Repetto",
           tipo: "Web · Salón de eventos",
@@ -80,7 +96,7 @@ const site: SiteConfig = {
           tags: ["Diseño a medida", "Mobile-first", "WhatsApp"],
         },
         {
-          icono: "GraduationCap",
+          icono: "Megaphone",
           cliente: "CSMA",
           tipo: "Redes · Colegio",
           texto: "Gestión de las redes del colegio: contenido, calendario de publicaciones y comunicación con las familias.",

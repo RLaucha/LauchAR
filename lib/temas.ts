@@ -95,6 +95,24 @@ export const temas: Record<NombreTema, Tema> = {
     displayTracking: "-0.045em",
     destacadoItalica: false,
   },
+  // Marca propia de LauchAR: degradé cyan → violeta del logo <LR>
+  lauchar: {
+    modo: "oscuro",
+    fondo: "#0b0d12",
+    fondo2: "#12151d",
+    texto: "#f3f4f6",
+    suave: "#9ca3af",
+    borde: "#222632",
+    acento: "#22d3ee",
+    acento2: "#8463f5",
+    sobreAcento: "#0b0d12",
+    banda: "#13112a",
+    display: "'Space Grotesk Variable', system-ui, sans-serif",
+    cuerpo: "'Manrope Variable', system-ui, sans-serif",
+    displayPeso: 700,
+    displayTracking: "-0.04em",
+    destacadoItalica: false,
+  },
 };
 
 export function variablesTema(t: Tema): Record<string, string> {
