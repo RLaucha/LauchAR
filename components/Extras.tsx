@@ -37,7 +37,7 @@ export function BannerPreview() {
       <span className="truncate">
         Propuesta de diseño por{" "}
         <a href="https://instagram.com/lauchar.dev" target="_blank" rel="noopener noreferrer" className="font-semibold text-white underline-offset-2 hover:underline">
-          LaunchAR
+          LauchAR
         </a>{" "}
         · Web de muestra
       </span>
@@ -68,7 +68,7 @@ export function Footer({ negocio, links }: { negocio: Negocio; links: { texto: s
           <p>
             © {new Date().getFullYear()} {negocio.nombre}. Web por{" "}
             <a href="https://instagram.com/lauchar.dev" target="_blank" rel="noopener noreferrer" className="font-medium text-texto hover:underline">
-              LaunchAR
+              LauchAR
             </a>
           </p>
           <div className="flex gap-3">

@@ -1,4 +1,4 @@
-// Tipos del molde LaunchAR. No hace falta tocar este archivo:
+// Tipos del molde LauchAR. No hace falta tocar este archivo:
 // todo lo que cambia por cliente vive en /site.config.ts
 
 export type NombreTema = "elegante" | "noche" | "fresco" | "urbano" | "lauchar";
@@ -129,6 +129,6 @@ export type SiteConfig = {
   nav: { texto: string; href: string }[];
   hero: Hero;
   secciones: Seccion[];
-  /** Muestra el banner "Preview diseñada por LaunchAR". Poner en false al entregar la web final. */
+  /** Muestra el banner "Preview diseñada por LauchAR". Poner en false al entregar la web final. */
   preview: boolean;
 };

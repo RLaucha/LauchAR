@@ -1,4 +1,4 @@
-# Molde LaunchAR
+# Molde LauchAR
 
 Web premium lista en minutos: cambiás **un solo archivo** (`site.config.ts`) y tenés una web con animaciones, WhatsApp, galería, FAQ y mapa.
 
