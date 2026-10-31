@@ -1,0 +1,125 @@
+@import "tailwindcss";
+@import "@fontsource-variable/cormorant-garamond";
+@import "@fontsource-variable/cormorant-garamond/wght-italic.css";
+@import "@fontsource-variable/manrope";
+@import "@fontsource-variable/fraunces";
+@import "@fontsource-variable/fraunces/wght-italic.css";
+@import "@fontsource-variable/space-grotesk";
+@import "@fontsource-variable/bricolage-grotesque";
+
+@theme inline {
+  --color-fondo: var(--c-fondo);
+  --color-fondo2: var(--c-fondo2);
+  --color-texto: var(--c-texto);
+  --color-suave: var(--c-suave);
+  --color-borde: var(--c-borde);
+  --color-acento: var(--c-acento);
+  --color-acento2: var(--c-acento2);
+  --color-sobre-acento: var(--c-sobre-acento);
+  --color-banda: var(--c-banda);
+  --font-display: var(--f-display);
+  --font-cuerpo: var(--f-cuerpo);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--c-fondo);
+  color: var(--c-texto);
+  font-family: var(--f-cuerpo);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+.font-display {
+  font-family: var(--f-display);
+  font-weight: var(--display-peso);
+  letter-spacing: var(--display-tracking);
+  line-height: 0.98;
+}
+
+@layer components {
+  .destacado {
+    color: var(--c-acento);
+    font-style: var(--destacado-estilo);
+  }
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+@media (min-width: 768px) {
+  .contenedor {
+    padding-inline: 2rem;
+  }
+}
+
+.seccion {
+  padding-block: 5.5rem;
+}
+@media (min-width: 768px) {
+  .seccion {
+    padding-block: 8rem;
+  }
+}
+
+/* Grano sutil para dar textura "cara" a placeholders y bandas */
+.grano::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@keyframes cinta {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.cinta {
+  animation: cinta var(--dur, 40s) linear infinite;
+}
+.cinta-pausa:hover .cinta {
+  animation-play-state: paused;
+}
+
+@keyframes aurora {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(8%, -6%) scale(1.15);
+  }
+  66% {
+    transform: translate(-6%, 5%) scale(0.95);
+  }
+}
+
+@keyframes pulso {
+  0% {
+    box-shadow: 0 0 0 0 rgb(37 211 102 / 0.55);
+  }
+  100% {
+    box-shadow: 0 0 0 18px rgb(37 211 102 / 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .cinta,
+  .aurora {
+    animation: none !important;
+  }
+}
