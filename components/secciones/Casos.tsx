@@ -48,7 +48,9 @@ export function Casos(s: Props) {
                 )}
               </>
             );
-            const clase = "group relative block overflow-hidden rounded-3xl border border-borde bg-fondo p-7 md:p-10";
+            // Con cantidad impar, el último ocupa las 2 columnas para que no quede hueco
+            const ultimoSolo = s.items.length % 2 === 1 && i === s.items.length - 1;
+            const clase = `group relative block overflow-hidden rounded-3xl border border-borde bg-fondo p-7 md:p-10 ${ultimoSolo ? "md:col-span-2" : ""}`;
             return it.url ? (
               <motion.a key={it.cliente} variants={itemStagger} whileHover={{ y: -6 }} href={it.url} target="_blank" rel="noopener noreferrer" className={clase}>
                 {contenido}
